@@ -1,5 +1,5 @@
 Arguments: 
-  /home/zubik/.nvm/versions/node/v14.17.3/bin/node /home/zubik/.nvm/versions/node/v14.17.3/bin/yarnpkg install
+  /home/zubik/.nvm/versions/node/v14.17.3/bin/node /home/zubik/.nvm/versions/node/v14.17.3/bin/yarn
 
 PATH: 
   /home/zubik/.nvm/versions/node/v14.17.3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
@@ -14,8 +14,8 @@ Platform:
   linux x64
 
 Trace: 
-  Error: connect EHOSTUNREACH 104.16.17.35:443
-      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1148:16)
+  Error: getaddrinfo EAI_AGAIN registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:26)
 
 npm manifest: 
   {
