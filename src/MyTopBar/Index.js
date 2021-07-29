@@ -11,11 +11,11 @@ console.log(searchInput);
        onChangeText={(text) => {setSearchInput(text)}}
        
       />
-    <Button
-  onPress={() => {searchInput}}
-  title="Search"
-  color="#841584"
-/>
+      <Button
+        onPress={() => {searchInput}}
+        title="Search"
+        color="#841584"
+      />
     </View>
   );
   
