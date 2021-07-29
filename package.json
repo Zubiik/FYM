@@ -10,8 +10,11 @@
   "dependencies": {
     "@emotion/native": "^11.0.0",
     "@emotion/react": "^11.4.0",
+    "@react-native-community/eslint-config": "^3.0.0",
+    "eslint": "7.14.0",
     "expo": "~42.0.1",
     "expo-status-bar": "~1.0.4",
+    "prettier": "2.1.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz",
@@ -20,6 +23,17 @@
   },
   "devDependencies": {
     "@babel/core": "^7.9.0"
+  },
+  "eslintConfig": {
+    "extends": "@react-native-community",
+    "plugins": [
+      "react",
+      "react-native",
+      "react-hooks"
+    ],
+    "rules": {
+      "camelcase": 1
+    }
   },
   "private": true
 }
