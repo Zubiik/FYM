@@ -7,11 +7,15 @@ import {
   Text,
   StatusBar,
 } from 'react-native';
+import LoadingIcon from '../LoadingIcon';
+import { Container, CustomFlatList } from "./styled.js";
+
 
 const MapList = () => {
   return (
-    <View>
-      <FlatList
+    <Container>
+      <LoadingIcon/>
+      <CustomFlatList
         data={[
           {
             id: '1',
@@ -41,7 +45,7 @@ const MapList = () => {
           return <Text>{item.id}</Text>;
         }}
       />
-    </View>
+    </Container>
   );
 };
 

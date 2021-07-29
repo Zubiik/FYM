@@ -11,8 +11,8 @@ const [searchInput, setSearchInput] = useState("");
   return (
     <View >
       <MapList/>
-      {/*<MyTopBar searchInput={searchInput} setSearchInput={setSearchInput}/>
-      <MyBottomBar/>*/}
+      <MyTopBar searchInput={searchInput} setSearchInput={setSearchInput}/>
+      <MyBottomBar/>
     </View>
 
   );
