@@ -3,9 +3,7 @@ import {
   SafeAreaView,
   View,
   FlatList,
-  StyleSheet,
-  Text,
-  StatusBar,
+  TextInput
 } from 'react-native';
 
 
@@ -13,15 +11,7 @@ const LinkPage = ({titleInput,setTitleInput,linkInput,setLinkInput}) => {
   return (
     <View>
  
-       <TextInput
-       style={styles.input}
-       onChangeText={(text) => {setSearchInput(text)}}
-      />
-    <Button
-onPress={() => {searchInput}}
-  title="Search"
-  color="#841584"
-/>
+  
     </View>
    
   );
