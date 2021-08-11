@@ -7,6 +7,8 @@ import {
   StatusBar,
 } from 'react-native';
 import { Container, CustomFlatList,PreviewContainer } from "./styled";
+import { LinearGradient } from 'expo-linear-gradient';
+
 
 
 const MapList = () => {
@@ -54,7 +56,17 @@ const MapList = () => {
           },
         ]}
         renderItem={( item ) => {
-          return <PreviewContainer>
+          return <LinearGradient
+          start={{ x: 0, y: 0 }}
+          end={{x: 1, y: 1 }}
+          colors={[ '#00EC26','#AA4B7DFC' ]}
+          style={{
+            borderRadius: 10,
+            margin:10,
+          }}
+        > 
+          <PreviewContainer>   
+
             <RNUrlPreview 
             containerStyle={{
               backgroundColor:"none",
@@ -63,6 +75,7 @@ const MapList = () => {
               }}
             text={item.item.url}/>
           </PreviewContainer>
+        </LinearGradient>
         }}
       /> 
     </Container>
