@@ -1,9 +1,8 @@
 import React from 'react';
-import { StyleSheet, Text, View,TextInput,Button } from 'react-native';
+import { StyleSheet, View,TextInput,Button } from 'react-native';
 
 const MyTopBar = ({searchInput,setSearchInput}) => {
 
-console.log(searchInput);
   return (
     <View>
        <TextInput
