@@ -1,21 +1,21 @@
 import React from 'react';
 import {
   SafeAreaView,
-  View,
-  FlatList,
   StyleSheet,
   Text,
   StatusBar,
 } from 'react-native';
-import LoadingIcon from '../LoadingIcon';
-import { Container, CustomFlatList } from "./styled.js";
+import { Container, CustomFlatList } from "./styled";
 
 
 const MapList = () => {
   return (
     <Container>
-      <LoadingIcon/>
       <CustomFlatList
+        contentContainerStyle={{
+          justifyContent: "center",
+          alignItems: "center",
+        }}
         data={[
           {
             id: '1',
