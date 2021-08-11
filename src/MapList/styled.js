@@ -1,15 +1,26 @@
 import styled from '@emotion/native';
 
+
 export const Container = styled.View`
-  display: flex;
+  height:100%;
   justify-content: center;
   align-items: center;
-  margin: 50px;
   background-color: blue;
 `;
 
 export const CustomFlatList = styled.FlatList`
+  background-color: white;
+  width: 100%;
+`;
+
+export const PreviewContainer = styled.View`
   display: flex;
-  margin: 50px;
-  color: blue;
+  align-items: center;
+  opacity: 0.8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  justify-content: center;
+  margin:10px;
+  background-color: #DCDCDD;
+  min-width: 90%;
 `;
