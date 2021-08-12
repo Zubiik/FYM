@@ -11,7 +11,7 @@ const MyTopBar = ({searchInput,setSearchInput}) => {
        
       />
       <Button
-        onPress={() => {searchInput}}
+        onPress={() => {console.log(searchInput)}}
         title="Search"
         color="#841584"
       />
