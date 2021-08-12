@@ -71,7 +71,7 @@ const MapList = () => {
             containerStyle={{
               backgroundColor:"none",
                alignItems:"center",
-               padding:4,
+               padding:4,  
               }}
             text={item.item.url}/>
           </PreviewContainer>
