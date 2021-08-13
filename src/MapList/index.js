@@ -1,17 +1,21 @@
 import React from 'react';
+import RNUrlPreview from 'react-native-url-preview';
 import {
   SafeAreaView,
   StyleSheet,
   Text,
   StatusBar,
 } from 'react-native';
-import { Container, CustomFlatList } from "./styled";
+import { Container, CustomFlatList,PreviewContainer } from "./styled";
+import { LinearGradient } from 'expo-linear-gradient';
+
 
 
 const MapList = () => {
   return (
     <Container>
-      <CustomFlatList
+
+     <CustomFlatList
         contentContainerStyle={{
           justifyContent: "center",
           alignItems: "center",
@@ -19,31 +23,61 @@ const MapList = () => {
         data={[
           {
             
-            url: 'https://www.google.fr/maps/place/Mont+Gerbier+de+Jonc/@44.8444583,4.2112452,15z/data=!3m1!4b1!4m5!3m4!1s0x12b4ce091a45f85b:0xc25f0737e4ae3bfc!8m2!3d44.844444!4d4.22',
+            url: 'https://goo.gl/maps/xoHzSq1wTn6T9isq7',
           
           },
           {
             
-            url: 'https://www.youtube.com/watch?v=-zZbkPnBtS8&t=41s',
+            url: 'https://goo.gl/maps/xoHzSq1wTn6T9isq7',
           },
           {
             
-            url: 'https://epicreact.dev/modules/react-fundamentals/react-fundamentals-welcome',
+            url: 'https://goo.gl/maps/xoHzSq1wTn6T9isq7',
           },
           {
             
-            url: 'https://www.pole-emploi.fr/accueil/',
+            url: 'https://goo.gl/maps/xoHzSq1wTn6T9isq7',
           },
           {
             
-            url: 'https://mail.google.com/mail/u/0/#inbox',
+            url: 'https://goo.gl/maps/xoHzSq1wTn6T9isq7',
+          },
+          {
+            
+            url: 'https://goo.gl/maps/xoHzSq1wTn6T9isq7',
+          },
+          {
+            
+            url: 'https://goo.gl/maps/xoHzSq1wTn6T9isq7',
+          },
+          {
+            
+            url: 'https://goo.gl/maps/xoHzSq1wTn6T9isq7',
           },
         ]}
-        renderItem={({ item }) => {
+        renderItem={( item ) => {
+          return <LinearGradient
+          start={{ x: 0, y: 0 }}
+          end={{x: 1, y: 1 }}
+          colors={[ '#00EC26','#AA4B7DFC' ]}
+          style={{
+            borderRadius: 10,
+            margin:10,
+          }}
+        > 
+          <PreviewContainer>   
 
-          return <Text>{item.id}</Text>;
+            <RNUrlPreview 
+            containerStyle={{
+              backgroundColor:"none",
+               alignItems:"center",
+               padding:4,  
+              }}
+            text={item.item.url}/>
+          </PreviewContainer>
+        </LinearGradient>
         }}
-      />
+      /> 
     </Container>
   );
 };
