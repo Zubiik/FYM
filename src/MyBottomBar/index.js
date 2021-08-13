@@ -1,32 +1,26 @@
 import React from 'react';
-import { StyleSheet, Text, View,TextInput,Button } from 'react-native';
+import { StyleSheet,TouchableOpacity, Text, View,TextInput,Button } from 'react-native';
+import {Container, CustomButton, TextCustom} from "./styled";
 
-const MyBottomBar = () => {
+const MyBottomBar = ({setOnOffButton}) => {
 
   return (
-    <View style={styles.input}>
-       
-    <Button
-  onPress={() => null}
-  title="Favorite"
-  color="#841584"
-/>
-<Button
-  onPress={() => null}
-  title="Add map"
-  color="#841584"
-/>
-    </View>
+    <Container>
+       <CustomButton onPress={() => setOnOffButton(true) }>
+        <TextCustom>
+         retour
+        </TextCustom>
+      </CustomButton>
+  
+      <CustomButton onPress={() => setOnOffButton(false)}>
+        <TextCustom>
+         Add map
+        </TextCustom>
+      </CustomButton>
+    </Container>
   );
   
 }
 
-const styles = StyleSheet.create({
-    input: {
-      height: 5,
-      margin: 12,
-      borderWidth: 1,
-    },
-  });
 
   export default MyBottomBar;
