@@ -6,7 +6,6 @@ export const Container = styled.View`
   height:100%;
   justify-content: center;
   align-items: center;
-  background-color: blue;
 `;
 
 export const CustomFlatList = styled.FlatList`
@@ -21,7 +20,7 @@ export const PreviewContainer = styled.View`
   border-radius: 10px;
   justify-content: center;
   margin:1px;
-  background-color: #DCDCDD;
+  background-color: white;
   min-width: 90%;
 `;
 

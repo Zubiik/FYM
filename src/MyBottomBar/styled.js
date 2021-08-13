@@ -7,10 +7,10 @@ justify-content: space-between;
 align-items: flex-end;
 flex-direction:row;
 position: absolute;
+margin: 5px;
 `;
 
 export const CustomButton = styled.TouchableOpacity`
-border-width: 1px;
 flex:1;
 align-items: center;
 background-color: green;

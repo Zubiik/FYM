@@ -3,8 +3,9 @@ import styled from '@emotion/native';
 export const Container = styled.View`
 display: flex;
 align-items: center;
-background-color:aliceblue;
 height: 100%;
+margin-top: 50px;
+
 `;
 
 export const TextInputCustom = styled.TextInput`
